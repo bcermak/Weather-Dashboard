@@ -13,6 +13,6 @@ When a city is entered into the search bar, and the icon is clicked, the "Curren
 
 *GitHub Pages:* https://bcermak.github.io/Weather-Dashboard/
 
-*GitHub:* https://github.com/bcermak
+*GitHub:* https://github.com/bcermak/Weather-Dashboard
 
 <img src = "Assets\Screenshot.PNG" alt = "Screenshot">
