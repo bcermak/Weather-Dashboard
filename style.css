@@ -2,7 +2,47 @@
     padding-left: 250px;
 }
 
+#current1 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
 #forecastMain {
+    
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 150px;
+}
+
+#forecast1 {
+    border-style: solid;
+    text-align: center;
+    background-color: rgb(1, 1, 75);
+    color: whitesmoke;
+}
+#forecast2 {
+    border-style: double;
+    text-align: center;
+    background-color: rgb(1, 1, 75);
+    color: whitesmoke;
+}
+#forecast3 {
+    border-style: double;
+    text-align: center;
+    background-color: rgb(1, 1, 75);
+    color: whitesmoke;
+}
+#forecast4 {
+    border-style: double;
+    text-align: center;
+    background-color: rgb(1, 1, 75);
+    color: whitesmoke;
+}
+#forecast5 {
+    border-style: double;
+    text-align: center;
+    background-color: rgb(1, 1, 75);
+    color: whitesmoke;
+}
+#forecastBody {
+   padding-left: 50px;
 }

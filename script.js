@@ -17,8 +17,9 @@ $( "#submitCity" ).click(function(e) {
         console.log(queryURL);
         console.log(response);
         var currentTempF = (response.main.temp - 273.15) * 1.80 + 32;
-        
-        $("#currentTemp").html("Current Temp (F): " + currentTempF.toFixed(2) + "&#176;");
+
+        $("#current1").html("Current " + response.name + " Weather:");
+        $("#currentTemp").html("Temp (F): " + currentTempF.toFixed(2) + "&#176;");
         $("#currentHumidity").append(" Humidity: " + response.main.humidity + "%");
         $("#currentWind").append(" Humidity: " + response.wind.speed + " MPH ");
     
@@ -52,24 +53,29 @@ $( "#submitCity" ).click(function(e) {
     $("#forecast2").append("<p>Low: " + lowTempF2.toFixed(2) + "&#176;");
 
     var futureTempF3 = (response.list[i+14].main.temp_max - 275.15) * 1.80 + 32; 
+    var lowTempF3 = (response.list[i+14].main.temp_min - 275.15) * 1.80 + 32;
 
     $("#forecast3").html(response.list[i+14].dt_txt);
     $("#forecast3").append("<p>High: " + futureTempF3.toFixed(2) + "&#176;");
+    $("#forecast3").append("<p>Low: " + lowTempF3.toFixed(2) + "&#176;");
 
     var futureTempF4 = (response.list[i+21].main.temp_max - 275.15) * 1.80 + 32;
+    var lowTempF4 = (response.list[i+21].main.temp_min - 275.15) * 1.80 + 32;
 
     $("#forecast4").html(response.list[i+21].dt_txt);
     $("#forecast4").append("<p>High: " + futureTempF4.toFixed(2) + "&#176;");
+    $("#forecast4").append("<p>Low: " + lowTempF4.toFixed(2) + "&#176;");
 
     var futureTempF5 = (response.list[i+28].main.temp_max - 275.15) * 1.80 + 32;
-
+    var lowTempF5 = (response.list[i+28].main.temp_min - 275.15) * 1.80 + 32;
+        
     $("#forecast5").html(response.list[i+28].dt_txt);
     $("#forecast5").append("<p>High: " + futureTempF5.toFixed(2) + "&#176;");
+    $("#forecast5").append("<p>Low: " + lowTempF5.toFixed(2) + "&#176;");
 
-
-
-
-    })
+   
+    });
+    
   });
 
 
