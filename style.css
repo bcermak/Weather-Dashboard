@@ -1,5 +1,37 @@
+body {
+    background-color: cadetblue;
+}
+
+.jumbotron {
+    font-family: 'Nerko One', cursive;
+    font-size: 60px;
+    background-color: darkslategray;
+    text-align: center;
+    padding-right: 15px;
+    height: 225px;
+}
+
+.jumboText {
+padding-bottom: 50px;
+}
+
+.searchTool {
+    margin-top: 7.5%;
+    height: 110px;
+    width: 340px;
+    background-color: rgb(59, 149, 240);
+    border: solid black;
+    text-align: center;
+}
+
 #current {
-    padding-left: 250px;
+    margin-top: 7.5%;
+    height: 110px;
+    width: 340px;
+    background-color: rgb(59, 149, 240);
+    border: solid black;
+    text-align: center;
+    
 }
 
 #current1 {
@@ -8,41 +40,61 @@
 }
 
 #forecastMain {
-    
-    justify-content: center;
-    padding-top: 150px;
+    margin-top: 5px;
+    background-color: rgb(59, 149, 240);
+    border: solid black;
+    text-align: center;
 }
 
 #forecast1 {
     border-style: solid;
     text-align: center;
-    background-color: rgb(1, 1, 75);
+    background-color: darkslategray;
     color: whitesmoke;
+    margin-right: 10px;
 }
 #forecast2 {
-    border-style: double;
+    border-style: solid;
     text-align: center;
-    background-color: rgb(1, 1, 75);
+    background-color:darkslategray;
     color: whitesmoke;
+    margin-right: 10px;
 }
 #forecast3 {
-    border-style: double;
+    border-style: solid;
     text-align: center;
-    background-color: rgb(1, 1, 75);
+    background-color: darkslategray;
     color: whitesmoke;
 }
 #forecast4 {
-    border-style: double;
+    border-style: solid;
     text-align: center;
-    background-color: rgb(1, 1, 75);
+    background-color: darkslategray;
     color: whitesmoke;
+    margin-left: 10px;
 }
 #forecast5 {
-    border-style: double;
+    border-style: solid;
     text-align: center;
-    background-color: rgb(1, 1, 75);
+    background-color: darkslategray;
     color: whitesmoke;
+    margin-left: 10px;
 }
 #forecastBody {
-   padding-left: 50px;
+margin: 0 auto;
+margin-bottom: 10px;
 }
+
+.mainContent {
+    margin-bottom: 250px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+  }

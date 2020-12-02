@@ -1,4 +1,4 @@
-var currentWeather = $("#currentWeather");
+var current = $("#current");
 var forecast = $("#forecast");
 
 var apiKey = "caa60dd5de89e3436e69161b817e42cb";
@@ -17,12 +17,11 @@ $( "#submitCity" ).click(function(e) {
         console.log(queryURL);
         console.log(response);
         var currentTempF = (response.main.temp - 273.15) * 1.80 + 32;
-
+        
         $("#current1").html("Current " + response.name + " Weather:");
         $("#currentTemp").html("Temp (F): " + currentTempF.toFixed(2) + "&#176;");
         $("#currentHumidity").append(" Humidity: " + response.main.humidity + "%");
         $("#currentWind").append(" Humidity: " + response.wind.speed + " MPH ");
-    
     })
     
     var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&appid=" + apiKey;
