@@ -47,8 +47,6 @@ $( "#submitCity" ).click(function(e) {
 
     var futureTempF1 = (response.list[i].main.temp_max - 275.15) * 1.80 + 32;
 
-
-    forecast.attr("display", "block");
     $("#forecast1").html(response.list[i].dt_txt);
     $("#forecast1").append("<p>Forecasted Temp: " + futureTempF1.toFixed(2) + "&#176;");
 
