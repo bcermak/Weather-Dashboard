@@ -55,14 +55,13 @@ padding-bottom: 50px;
     text-align: center;
     background-color: darkslategray;
     color: whitesmoke;
-    margin-right: 10px;
+ 
 }
 #forecast2 {
     border-style: solid;
     text-align: center;
     background-color:darkslategray;
     color: whitesmoke;
-    margin-right: 10px;
 }
 #forecast3 {
     border-style: solid;
@@ -75,18 +74,19 @@ padding-bottom: 50px;
     text-align: center;
     background-color: darkslategray;
     color: whitesmoke;
-    margin-left: 10px;
+
 }
 #forecast5 {
     border-style: solid;
     text-align: center;
     background-color: darkslategray;
     color: whitesmoke;
-    margin-left: 10px;
+
 }
 #forecastBody {
 margin: 0 auto;
 margin-bottom: 10px;
+width: 50%;
 }
 
 .mainContent {

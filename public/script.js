@@ -5,6 +5,8 @@ var cityInput = $("#cityInput")
 
 var apiKey = "caa60dd5de89e3436e69161b817e42cb";
 
+forecast.hidden();
+
 $( "#submitCity" ).click(function(e) {
     e.preventDefault();
     
@@ -37,48 +39,52 @@ $( "#submitCity" ).click(function(e) {
         for (var i = 0; i++;) {
             response.list[i]
             console.log(response.list[i])
-            var currentDate = response.list[i].dt_txt
-            console.log(currentDate)
+            var currentDate = response.list[i].dt_txt;
+            console.log(currentDate);
         }
+
+
     var futureTempF1 = (response.list[i].main.temp_max - 275.15) * 1.80 + 32;
-    var lowTempF1 = (response.list[i].main.temp_min - 275.15) * 1.80 + 32;
+
+
 
     $("#forecast1").html(response.list[i].dt_txt);
-    $("#forecast1").append("<p>High: " + futureTempF1.toFixed(2) + "&#176;");
-    $("#forecast1").append("<p>Low: " + lowTempF1.toFixed(2) + "&#176;");
+    $("#forecast1").append("<p>Forecasted Temp:" + futureTempF1.toFixed(2) + "&#176;");
+
 
     var futureTempF2 = (response.list[i+7].main.temp_max - 275.15) * 1.80 + 32;
-    var lowTempF2 = (response.list[i+7].main.temp_min - 275.15) * 1.80 + 32;  
+
 
     $("#forecast2").html(response.list[i+7].dt_txt);
-    $("#forecast2").append("<p>High: " + futureTempF2.toFixed(2) + "&#176;");
-    $("#forecast2").append("<p>Low: " + lowTempF2.toFixed(2) + "&#176;");
+    $("#forecast2").append("<p>Forecasted Temp: " + futureTempF2.toFixed(2) + "&#176;");
+
 
     var futureTempF3 = (response.list[i+14].main.temp_max - 275.15) * 1.80 + 32; 
-    var lowTempF3 = (response.list[i+14].main.temp_min - 275.15) * 1.80 + 32;
+
 
     $("#forecast3").html(response.list[i+14].dt_txt);
-    $("#forecast3").append("<p>High: " + futureTempF3.toFixed(2) + "&#176;");
-    $("#forecast3").append("<p>Low: " + lowTempF3.toFixed(2) + "&#176;");
+    $("#forecast3").append("<p>Forecasted Temp: " + futureTempF3.toFixed(2) + "&#176;");
+
 
     var futureTempF4 = (response.list[i+21].main.temp_max - 275.15) * 1.80 + 32;
-    var lowTempF4 = (response.list[i+21].main.temp_min - 275.15) * 1.80 + 32;
+
 
     $("#forecast4").html(response.list[i+21].dt_txt);
-    $("#forecast4").append("<p>High: " + futureTempF4.toFixed(2) + "&#176;");
-    $("#forecast4").append("<p>Low: " + lowTempF4.toFixed(2) + "&#176;");
+    $("#forecast4").append("<p>Forecasted Temp: " + futureTempF4.toFixed(2) + "&#176;");
+    
 
     var futureTempF5 = (response.list[i+28].main.temp_max - 275.15) * 1.80 + 32;
-    var lowTempF5 = (response.list[i+28].main.temp_min - 275.15) * 1.80 + 32;
+
         
     $("#forecast5").html(response.list[i+28].dt_txt);
-    $("#forecast5").append("<p>High: " + futureTempF5.toFixed(2) + "&#176;");
-    $("#forecast5").append("<p>Low: " + lowTempF5.toFixed(2) + "&#176;");
+    $("#forecast5").append("<p>Forecasted Temp: " + futureTempF5.toFixed(2) + "&#176;");
 
    
     });
  
   });
+
+
 
 
  
