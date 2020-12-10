@@ -1,15 +1,16 @@
 var current = $("#current");
 var forecast = $("#forecast");
-
+var forecastBody = $("#forecaseBody")
 var cityInput = $("#cityInput")
 
 var apiKey = "caa60dd5de89e3436e69161b817e42cb";
 
-forecast.hidden();
+
 
 $( "#submitCity" ).click(function(e) {
     e.preventDefault();
-    
+    $("#forecastBody").show();
+
     var cityInput = $("#cityInput").val()
     var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityInput + "&appid=" + apiKey;
 
@@ -47,9 +48,9 @@ $( "#submitCity" ).click(function(e) {
     var futureTempF1 = (response.list[i].main.temp_max - 275.15) * 1.80 + 32;
 
 
-
+    forecast.attr("display", "block");
     $("#forecast1").html(response.list[i].dt_txt);
-    $("#forecast1").append("<p>Forecasted Temp:" + futureTempF1.toFixed(2) + "&#176;");
+    $("#forecast1").append("<p>Forecasted Temp: " + futureTempF1.toFixed(2) + "&#176;");
 
 
     var futureTempF2 = (response.list[i+7].main.temp_max - 275.15) * 1.80 + 32;
