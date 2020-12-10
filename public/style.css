@@ -24,6 +24,10 @@ padding-bottom: 50px;
     text-align: center;
 }
 
+.btn {
+    background-color: darkslategray;
+}
+
 #current {
     margin-top: 7.5%;
     height: 110px;
