@@ -4,19 +4,17 @@ body {
 
 .jumbotron {
     font-family: 'Nerko One', cursive;
-    font-size: 60px;
     background-color: darkslategray;
     text-align: center;
-    padding-right: 15px;
-    height: 225px;
+    padding: 11px 0px ;
+    
 }
 
-.jumboText {
-padding-bottom: 50px;
+.lead {
+
 }
 
 .searchTool {
-    margin-top: 7.5%;
     height: 110px;
     width: 340px;
     background-color: rgb(59, 149, 240);
@@ -29,7 +27,7 @@ padding-bottom: 50px;
 }
 
 #current {
-    margin-top: 7.5%;
+    
     height: 110px;
     width: 340px;
     background-color: rgb(59, 149, 240);
@@ -95,7 +93,8 @@ width: 25%;
 }
 
 .mainContent {
-    margin-bottom: 250px;
+    margin-bottom: 70px;
+    margin-top: 45px;
 }
 
 .footer {
